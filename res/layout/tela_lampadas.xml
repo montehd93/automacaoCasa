@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.tcc.TelaInicial" >
+
+    <Button
+        android:id="@+id/btmenuprin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="Voltar Menu" />
+
+    <CheckBox
+        android:id="@+id/chgaragem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Garagem"
+        android:onClick="itemClicked" />
+
+    <CheckBox
+        android:id="@+id/chsala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chgaragem"
+        android:layout_below="@+id/chgaragem"
+        android:text="Sala"
+        android:onClick="itemClicked" />
+
+    <CheckBox
+        android:id="@+id/chcozinha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/chsala"
+        android:layout_below="@+id/chsala"
+        android:text="Cozinha"
+        android:onClick="itemClicked" />
+
+    <CheckBox
+        android:id="@+id/chlavanderia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/chcozinha"
+        android:text="Lavanderia"
+        android:onClick="itemClicked" />
+
+    <CheckBox
+        android:id="@+id/chcorredor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chlavanderia"
+        android:layout_below="@+id/chlavanderia"
+        android:text="Corredor"
+        android:onClick="itemClicked" />
+
+    <CheckBox
+        android:id="@+id/chluz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/chcorredor"
+        android:layout_below="@+id/chcorredor"
+        android:text="Área de Luz"
+        android:onClick="itemClicked" />
+
+    <CheckBox
+        android:id="@+id/chquarto1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chluz"
+        android:layout_below="@+id/chluz"
+        android:text="Quarto 1" 
+        android:onClick="itemClicked"/>
+
+    <CheckBox
+        android:id="@+id/chquarto2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chquarto1"
+        android:layout_below="@+id/chquarto1"
+        android:text="Quarto 2"
+        android:onClick="itemClicked" />
+
+    <CheckBox
+        android:id="@+id/chquarto3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chquarto2"
+        android:layout_below="@+id/chquarto2"
+        android:text="Quarto 3" 
+        android:onClick="itemClicked"/>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.tcc.TelaInicial" >
+
+    <Switch
+        android:id="@+id/swgaragem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="42dp"
+        android:checked="true"
+        android:text="Portão" />
+
+    <Switch
+        android:id="@+id/swsala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/swgaragem"
+        android:checked="true"
+        android:text="Sala" />
+
+    <Switch
+        android:id="@+id/swlavanderia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/swsala"
+        android:checked="true"
+        android:text="Lavanderia" />
+
+    <Switch
+        android:id="@+id/swquarto1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/swlavanderia"
+        android:checked="true"
+        android:text="Quarto 1" />
+
+    <Switch
+        android:id="@+id/swquarto2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/swquarto1"
+        android:checked="true"
+        android:text="Quarto 2" />
+
+    <Switch
+        android:id="@+id/swquarto3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/swquarto2"
+        android:checked="true"
+        android:text="Quarto 3" />
+
+    <Button
+        android:id="@+id/btmenuporta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/swquarto3"
+        android:layout_alignParentBottom="true"
+        android:text="Volta Menu" />
+
+</RelativeLayout>
